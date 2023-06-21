@@ -1,0 +1,10 @@
+from sklearn.ensemble import RandomForestClassifier
+
+# Create a random forest classifier object
+rf_classifier = RandomForestClassifier(n_estimators=100)
+
+# Train the classifier on the training data
+rf_classifier.fit(X_train, y_train)
+
+# Predict the target variable for the test data
+y_pred = rf_classifier.predict(X_test)
